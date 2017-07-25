@@ -1,8 +1,10 @@
 .widget-wrapper {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   height: 210px;
   width: 440px;
   /*position: absolute;*/
+  margin: 0px;
+  padding: 0px;
 }
 
 .widget-header {
@@ -30,13 +32,14 @@
 .widget-left {
   /*border: 1px solid red;*/
   float: left;
-  /*position: relative;*/
 }
 
 .widget-right {
   /*border: 1px solid black;*/
-  float: right;
-  /*position: relative;*/
+  /*float: right;*/
+  position: absolute;
+  right: 0;
+  top: 14%;
 }
 
 .widget-left-value {
