@@ -10,6 +10,9 @@
   </div> -->
 
   <hr>
+  <app-dashboard-widget-battery-charge></app-dashboard-widget-battery-charge>
+
+  <hr>
   <app-dashboard-widget [title]="'Fuel Consumption'" [value]="'27'" [unit]="'lbs'" [percentageChange]="'+10%'" [chartOptions]="barChart"></app-dashboard-widget>
 
   <hr>
@@ -20,7 +23,5 @@
 
   <hr>
   <app-dashboard-widget [title]="'Ice Making Water Consumption'" [value]="'232'" [unit]="'gal'" [percentageChange]="'-3%'" [chartOptions]="basicColumnChart"></app-dashboard-widget>
-
-  <hr>
 
 </div>
