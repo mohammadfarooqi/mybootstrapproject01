@@ -10,18 +10,28 @@
   </div> -->
 
   <hr>
-  <app-dashboard-widget-battery-charge></app-dashboard-widget-battery-charge>
+  <app-dashboard-widget-additional-resources [title]="'Additional Resources'"></app-dashboard-widget-additional-resources>
+
 
   <hr>
-  <app-dashboard-widget [title]="'Fuel Consumption'" [value]="'27'" [unit]="'lbs'" [percentageChange]="'+10%'" [chartOptions]="barChart"></app-dashboard-widget>
+  <app-dashboard-widget-maintenance-log [title]="'Maintenance Log'"></app-dashboard-widget-maintenance-log>
 
   <hr>
-  <app-dashboard-widget [title]="'Engine Coolant Temperature'" [value]="'195'" [unit]="'F'" [percentageChange]="'-10%'" [chartOptions]="stackedColumnChart"></app-dashboard-widget>
+  <app-dashboard-widget-dtc [title]="'Diagnostic Trouble Codes'"></app-dashboard-widget-dtc>
 
   <hr>
-  <app-dashboard-widget [title]="'Machine Speed'" [value]="'8'" [unit]="'mph'" [percentageChange]="'+2%'" [chartOptions]="semiCircleDonutChart"></app-dashboard-widget>
+  <app-dashboard-widget-battery-charge [title]="'Battery Charge'" [leftValue]="86" [leftUnit]="'v'" [rightValue]="23" [rightUnit]="'v'"></app-dashboard-widget-battery-charge>
 
   <hr>
-  <app-dashboard-widget [title]="'Ice Making Water Consumption'" [value]="'232'" [unit]="'gal'" [percentageChange]="'-3%'" [chartOptions]="basicColumnChart"></app-dashboard-widget>
+  <app-dashboard-widget [title]="'Fuel Consumption'" [value]="27" [unit]="'lbs'" [percentageChange]="'+10%'" [chartOptions]="barChart"></app-dashboard-widget>
+
+  <hr>
+  <app-dashboard-widget [title]="'Engine Coolant Temperature'" [value]="195" [unit]="'F'" [percentageChange]="'-10%'" [chartOptions]="stackedColumnChart"></app-dashboard-widget>
+
+  <hr>
+  <app-dashboard-widget [title]="'Machine Speed'" [value]="8" [unit]="'mph'" [percentageChange]="'+2%'" [chartOptions]="semiCircleDonutChart"></app-dashboard-widget>
+
+  <hr>
+  <app-dashboard-widget [title]="'Ice Making Water Consumption'" [value]="232" [unit]="'gal'" [percentageChange]="'-3%'" [chartOptions]="basicColumnChart"></app-dashboard-widget>
 
 </div>

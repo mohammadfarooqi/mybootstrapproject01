@@ -1,10 +1,14 @@
-.widget-wrapper {
-  /*border: 1px solid black;*/
-  height: 210px;
-  width: 440px;
-  /*position: absolute;*/
-  margin: 0px;
-  padding: 0px;
+.b {
+  /*border: 1px solid blue;*/
+}
+
+.c {
+  /*border: 1px solid red;*/
+}
+
+.b, .c {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .widget-header {
@@ -24,54 +28,11 @@
   margin-right: 12px;
 }
 
-.widget-left, .widget-right {
-  width: 50%;
-  /*height: 86%;*/
+span a {
+  margin-left: 7px;
+  color: grey;
 }
 
-.widget-left {
-  /*border: 1px solid red;*/
-  /*float: left;*/
-}
-
-.widget-right {
-  /*border: 1px solid black;*/
-  /*float: right;*/
-  position: absolute;
-  right: 0;
-  top: 14%;
-}
-
-.widget-left-value, .widget-right-value {
-  font-size: 60px;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.widget-left-value {
-  margin-left: 35px;
-}
-
-.widget-right-value {
-  margin-left: 70px;
-}
-
-.widget-left-unit, .widget-right-unit {
-  font-size: 40px;
-  margin-left: 5px;
-  display: inline-block;
-}
-
-.widget-middle-line {
-  width: 75px;
-  position: absolute;
-  top: 40%;
-  left: 41%;
-}
-
-.widget-middle-line hr {
-  border-top: 2px solid #ccc;
-}
 
 /*dropdown*/
 .dropbtn {

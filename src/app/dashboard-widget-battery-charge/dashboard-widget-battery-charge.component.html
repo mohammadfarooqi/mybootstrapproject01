@@ -1,3 +1,32 @@
-<p>
-  dashboard-widget-battery-charge works!
-</p>
+<div class="card widget-wrapper">
+  <div class="widget-header">
+
+    <span class="widget-header-fa-left"><i class="fa fa-th"></i></span>
+    <span>{{title}}</span>
+    <span class="widget-header-fa-right">
+      <!-- <i class="fa fa-ellipsis-v"></i> -->
+      <div class="dropdown">
+        <button class="dropbtn"><i class="fa fa-ellipsis-v"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </span>
+  </div>
+
+  <div class="widget-left">
+    <span class="widget-left-value">{{leftValue}}</span>
+    <span class="widget-left-unit">{{leftUnit}}</span>
+  </div>
+
+  <div class="widget-middle">
+    <div class="widget-middle-line"><hr></div>
+  </div>
+
+  <div class="widget-right">
+    <span class="widget-right-value">{{rightValue}}</span>
+    <span class="widget-right-unit">{{rightUnit}}</span>
+  </div>
+</div>
